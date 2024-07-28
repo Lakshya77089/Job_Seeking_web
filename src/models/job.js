@@ -78,4 +78,4 @@ const jobSchema = new mongoose.Schema({
   }
 });
 
-module.exports = mongoose.model("Job", jobSchema);
+module.exports = mongoose.model("process.env.Job", jobSchema);

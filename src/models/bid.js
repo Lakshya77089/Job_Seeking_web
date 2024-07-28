@@ -25,4 +25,4 @@ let sch=mong.Schema({
 });
 
 
-module.exports=mong.model("bid",sch);
+module.exports=mong.model("process.env.Bid",sch);

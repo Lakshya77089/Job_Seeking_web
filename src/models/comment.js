@@ -15,4 +15,4 @@ let sch=mong.Schema({
 });
 
 
-module.exports=mong.model("comment",sch);
+module.exports=mong.model("process.env.Comment",sch);
