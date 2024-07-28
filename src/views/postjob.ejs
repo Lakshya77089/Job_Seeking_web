@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Easiest Way to Add Input Masks to Your Forms</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/postjob.css">
+   
+</head>
+<body>
+    <div class="registration-form">
+        <form action="/postjob" method="post" enctype="multipart/form-data">
+            <div class="header">
+                <h1>Job Specification</h1>
+            </div>
+            <br>
+            <div class="form-group">
+                <input type="text" class="form-control item" id="title" name="title" placeholder="Job title" >
+            </div>
+            <div class="form-group">
+                <textarea type="text" class="form-control item" id="description" name="description" placeholder="Tell about the job for which you are looking for"></textarea>
+            </div>
+
+
+            <div class="form-group">
+                <label for="salary-type">Salary Type</label>
+                <select id="salary-type" class="form-group">
+                    <option name="salarybut" id="salarybut" value="fixed">Fixed</option>
+                    <option name="salarybut" id="salarybut" value="range">Range</option>
+                </select>
+            </div>
+             
+            <div class="form-group">
+                <input type="number" class="form-control item" id="fixedsal" placeholder="Fixed Salary" name="fixsal" style="display: block;">
+            </div>
+            
+            <div class="form-group">
+                <input type="number" class="form-control item" id="fromsal" placeholder="From Salary" name="fromsal" style="display: none;">
+                <input type="number" class="form-control item" id="tosal" placeholder="To Salary" name="tosal" style="display: none;">
+            </div>
+           
+
+
+
+            <div class="form-group">
+                <input type="text" class="form-control item" id="loction" name="location" placeholder="Loction">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control item" id="city" name="city" placeholder="City">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control item" id="country" name="country" placeholder="Country">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control item" id="skillrequired" name="skill" placeholder="Skill Required">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control item" id="vacancy" name="vacancy" placeholder="Vacancy">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control item" id="category" name="category" placeholder="Category">
+            </div>
+           <div class="form-group">
+                <textarea type="text" class="form-control item" id="cominfo" name="cominfo" placeholder="Tell about your company"></textarea>
+            </div> 
+           <div class="form-group">
+                <input type="text" class="form-control item" id="comname" name="comname" placeholder="Company Name">
+            </div> 
+           <div class="form-group">
+                <input type="text" class="form-control item" id="comlink" name="comlink" placeholder="Company Website Link">
+            </div> 
+           <div class="form-group">
+                <input type="text" class="form-control item" id="comemail" name="comemail" placeholder="Company Email">
+            </div> 
+            <div class="form-group">
+                <input type="datetime-local" class="form-control item" id="datetime" name="datetime" step="1" placeholder="Select Date and Time">
+              </div>
+            <div class="form-group">
+                <label for="image">Job Image</label>
+                <input type="file" class="form-control" id="image" name="image">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-block create-account">POST JOB</button>
+            </div>
+        </form>
+    </div>
+    <script src="assets/js/postjob.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+</body>
+</html>

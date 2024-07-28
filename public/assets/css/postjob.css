@@ -1,0 +1,168 @@
+body{
+    background-color: #dee9ff;
+}
+
+.registration-form{
+	padding: 50px 0;
+}
+
+.registration-form form{
+    background-color: #fff;
+    max-width: 600px;
+    margin: auto;
+    padding: 50px 70px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+}
+
+.registration-form .form-icon{
+	text-align: center;
+    background-color: #5891ff;
+    border-radius: 50%;
+    font-size: 40px;
+    color: white;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    margin-bottom: 50px;
+    line-height: 100px;
+}
+
+.registration-form .item{
+	border-radius: 20px;
+    margin-bottom: 25px;
+    padding: 10px 20px;
+}
+
+.registration-form .create-account{
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #5791ff;
+    border: none;
+    color: white;
+    margin-top: 20px;
+}
+
+.registration-form .social-media{
+    max-width: 600px;
+    background-color: #fff;
+    margin: auto;
+    padding: 35px 0;
+    text-align: center;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    color: #9fadca;
+    border-top: 1px solid #dee9ff;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+}
+
+.registration-form .social-icons{
+    margin-top: 30px;
+    margin-bottom: 16px;
+}
+
+.registration-form .social-icons a{
+    font-size: 23px;
+    margin: 0 3px;
+    color: #5691ff;
+    border: 1px solid;
+    border-radius: 50%;
+    width: 45px;
+    display: inline-block;
+    height: 45px;
+    text-align: center;
+    background-color: #fff;
+    line-height: 45px;
+}
+
+.registration-form .social-icons a:hover{
+    text-decoration: none;
+    opacity: 0.6;
+}
+
+@media (max-width: 576px) {
+    .registration-form form{
+        padding: 50px 20px;
+    }
+
+    .registration-form .form-icon{
+        width: 70px;
+        height: 70px;
+        font-size: 30px;
+        line-height: 70px;
+    }
+}
+.input-container {
+    position: relative;
+  }
+  
+  .usd-label {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: #666;
+    pointer-events: none; /* to prevent clicking on the label */
+  }
+  .form-control.item {
+    padding-right: 40px; /* add some space for the USD text and arrows */
+    padding-left: 10px; /* add some space for the dollar sign */
+  }
+  
+  .form-control.ite::-webkit-inner-spin-button,
+  .form-control.ite::-webkit-outer-spin-button {
+    margin-right: 20px; /* move the arrows to the left */
+    opacity: 1; /* make the arrows visible */
+  }
+  
+  .form-control.ite::after {
+    content: "USD";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: #666;
+    pointer-events: none; /* to prevent clicking on the pseudo-element */
+  }
+
+  .result-container {
+    display: flex;
+    background-color: #f7f7f7; /* light gray background */
+    padding: 20px; /* add some padding */
+    border: 1px solid #ddd; /* add a border */
+    border-radius: 10px; /* add a rounded corner */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* add a subtle shadow */
+  }
+  
+  .result-container p {
+    margin-bottom: 10px; /* add some space between paragraphs */
+  }
+  
+  .result-container span {
+    font-weight: bold; /* make the amounts bold */
+    color: #337ab7; /* blue color for the amounts */
+  }
+  
+  #paid-to-you {
+    font-size: 18px; /* make the "Paid to you" label slightly larger */
+  }
+  
+  #net-amount {
+    font-size: 18px; /* make the "Net amount" label slightly larger */
+    font-weight: bold; /* make the "Net amount" label bold */
+    color: #337ab7; /* blue color for the "Net amount" label */
+  }
+  
+  #net-amount-value {
+    font-size: 18px; /* make the net amount value larger */
+    font-weight: bold; /* make the net amount value bold */
+    color: #337ab7; /* blue color for the net amount value */
+  }
+  /* ... other styles ... */
+
+/* Add these new styles for the salary fields */

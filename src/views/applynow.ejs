@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Easiest Way to Add Input Masks to Your Forms</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/postjob.css">
+    
+</head>
+<body>
+    <div class="registration-form">
+        <form action="/placebid" method="post">
+            <div class="header">
+                <h1>Place a bid on this project</h1>
+            </div>
+            <br>
+            <% if (typeof message !== 'undefined') { %>
+                <br><p style="color:red;"><%= message %></p><br>
+                <% } %>
+
+            <% if (saltype) { %>
+                <div class="form-group">
+                    <input type="number" class="form-control item" id="fixedsal" value="<%=saltype%>" placeholder="Fixed Salary" name="fixsal" disabled>
+                    <input type="hidden" value="saltype" name="fixsal"> 
+                </div>
+                <% } else { %>
+                    <div class="form-group">
+                        <input type="number" class="form-control item" id="fromsal" value="<%=fromsal%>" placeholder="From Salary" name="fromsal" disabled >
+                        <input type="number" class="form-control item" id="tosal"  value="<%=tosal%>" placeholder="To Salary" name="tosal" disabled>
+                    </div>
+                    <p style="color: red;">Amount should be <%=fromsal%>-<%=tosal%> range</p>
+                    <% } %> 
+                    <div class="form-group">
+                        <label>Bid Amount</label>
+                        <div class="input-container">
+                            <input type="number" class="form-control item" name="bidamount" placeholder="$" id="bidamount-input">
+                            <span class="usd-label">USD</span>
+                        </div>
+                    </div>
+                    <p style="color: red;">Confirm your amount</p>
+              <div class="form-group">
+                <label>Deadline</label>
+                <div class="input-container">
+                  <input type="number" class="form-control item" name="days"  id="days-input">
+                  <span class="usd-label">Days</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Describe your proposal (minimum 100 characters)</label>
+                <textarea class="form-control item" id="description" name="description" rows="10" placeholder="What makes you the best candidate for this project?"></textarea>
+            </div>
+            <p style="color: red;">Describe your potential as much you can (It increase the chances for the proposal)</p>
+            <div class="form-group">
+                <button type="submit" class="btn btn-block create-account">PLACE BID</button>
+            </div>
+            <div class="result-container">
+                <p style="font-size: 15px;" id="paid-to-you">Paid to you: <span style="font-size: 15px;" id="paid-amount">$0.00</span></p>
+                <p style="font-size: 15px;" id="fee">- <span style="font-size: 15px;" id="fee-amount">$0.00</span> fee</p>
+                <p style="font-size: 15px;" id="levy">- <span style="font-size: 15px;" id="levy-amount">$0.00</span> levy</p>
+                <p style="font-size: 15px;" id="net-amount">= <span style="font-size: 15px;" id="net-amount-value">$0.00</span></p>
+        </div>
+        <input type="hidden" value="<%=id%>" name="id" id="id">
+        <p style="color: red;">fee is 2% on Bid Amount and 3 % deduction because of tax</p>
+    </form>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script src="assets/js/placebid.js"></script>
+</body>
+</html>
