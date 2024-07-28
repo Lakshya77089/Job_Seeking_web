@@ -1,12 +1,2 @@
-PORT=4000
-DB_URL=mongodb://127.0.0.1:27017/job_website_database
-JWT_SECRET_KEY=12345
-jwt_EXPIRE=7d
-COOKIE_EXPIRE=5
-USER_NAME=userSchema
-
-SECRET_KEY=12345
-AUTH=eowh cvrg hllv ckag
-Bid=bid
-Job=job
-Comment=comment
+# Ignore the .env file
+.env
